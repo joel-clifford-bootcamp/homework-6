@@ -1,0 +1,54 @@
+.body{
+    padding: 0;
+}
+
+.header{
+    padding: 10px 0px;
+    background-color: darkslategray;
+    color: white;
+}
+
+.sidebar{
+    padding: 15px;
+    background-color: lightgray;
+}
+
+.city-search{
+    margin-right: 10px;
+}
+
+.list-group{
+    margin-top: 15px;
+
+}
+
+.weather{
+    background-image: url("https://img.wallpapersafari.com/desktop/1280/1024/20/96/XvfGKF.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 30px;
+    border-radius: 0;
+    height: 100%;
+}
+
+.weather-label{
+    padding-right: 10px;
+}
+
+.forecast-header{
+    padding-top: 30px
+}
+
+.forecast-col{
+    padding-left: 0;
+}
+
+.day-card{
+    background-color: skyblue;
+    text-align: center;
+}
+
+.daily-weather-icon{
+    margin: 15px auto;
+}
