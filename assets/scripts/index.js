@@ -102,7 +102,7 @@ function addCityToHistory(cityName)
 // Get current weather for city
 function getCurrentWeather(city, addToHistory = false)
 {
-    const weatherUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+    const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
     $.ajax({
         type: "GET",
@@ -110,7 +110,7 @@ function getCurrentWeather(city, addToHistory = false)
         dataType: "json",
         success: response => {
 
-            const iconUrl = `http://openweathermap.org/img/w/${response.weather[0].icon}.png`;
+            const iconUrl = `https://openweathermap.org/img/w/${response.weather[0].icon}.png`;
 
             const cityAndDateEl = $("#cityAndDate");
             const imgEl = $("#currentImg");
@@ -139,7 +139,7 @@ function getCurrentWeather(city, addToHistory = false)
 // get current weather for location
 function getCurrentWeatherFromCoords(lat, lon, currentLocation = false)
 {
-    const weatherUrl = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
+    const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
 
     $.ajax({
         type: "GET",
@@ -147,7 +147,7 @@ function getCurrentWeatherFromCoords(lat, lon, currentLocation = false)
         dataType: "json",
         success: response => {
 
-            const iconUrl = `http://openweathermap.org/img/w/${response.weather[0].icon}.png`;
+            const iconUrl = `https://openweathermap.org/img/w/${response.weather[0].icon}.png`;
 
             const cityAndDateEl = $("#cityAndDate");
             const imgEl = $("#currentImg");
@@ -179,7 +179,7 @@ function getCurrentWeatherFromCoords(lat, lon, currentLocation = false)
 // get noon forecast for selected city
 function getForecast(city)
 {
-    const forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
+    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
 
     $.ajax({
         type: "GET",
@@ -210,7 +210,7 @@ function getForecast(city)
 // get noon forecast for location
 function getForecastFromCoords(lat, lon)
 {
-    const forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`;
+    const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`;
 
     $.ajax({
         type: "GET",
@@ -248,7 +248,7 @@ function renderDailyForecast(dailyWeather)
 <div class="card">      
 <div class="card-body day-card">
 <h5 class="card-title">${date}</h5>
-<img alt="weather thumbnail" class="daily-weather-icon" src=http://openweathermap.org/img/w/${dailyWeather.weather[0].icon}.png>
+<img alt="weather thumbnail" class="daily-weather-icon" src=https://openweathermap.org/img/w/${dailyWeather.weather[0].icon}.png>
 <h5 class="daily-temp">${(dailyWeather.main.temp - 273.15).toFixed(1)}\xB0C</h5>
 <h6>${dailyWeather.main.humidity}% Humidity</h6>
 </div>
