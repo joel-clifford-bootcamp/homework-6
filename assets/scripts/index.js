@@ -260,11 +260,7 @@ function renderDailyForecast(dailyWeather)
 
 function isNoonForecast(dateText){
 
-    console.log(dateText);
-
     const hour = moment(dateText).format("HH");
-
-    console.log(hour);
 
     return hour === "12";
 }
