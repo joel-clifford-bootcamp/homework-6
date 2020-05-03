@@ -1,10 +1,20 @@
-# 06 Server-Side APIs: Weather Dashboard
+# Server-Side APIs: Weather Dashboard
+
+A dashboard for viewing the current weather conditions and 5-day forecast for a specified location.
+
+By default, the user's current location is used (if the user allows the site to access their location). Current location and all subsequent location searches are stored in the quick access toolbar on the left-hand side.
+
+To use the app, visit: https://joel-clifford-bootcamp.github.io/homework-6/
+
+# Assignment Overview
+
+## 06 Server-Side APIs: Weather Dashboard
 
 Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
 
 Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called "How to start" that will provide basic setup and usage instructions. Use `localStorage` to store any persistent data.
 
-## User Story
+### User Story
 
 ```
 AS A traveler
@@ -12,7 +22,7 @@ I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 ```
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 ```
 GIVEN a weather dashboard with form inputs
@@ -32,7 +42,7 @@ The following image demonstrates the application functionality:
 
 ![weather dashboard demo](./Assets/06-server-side-apis-homework-demo.png)
 
-## Review
+### Review
 
 You are required to submit the following for review:
 
